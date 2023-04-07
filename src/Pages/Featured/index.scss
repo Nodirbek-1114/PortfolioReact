@@ -1,0 +1,113 @@
+.featured-wrapper {
+    .featured {
+
+        &__title {
+            font-size: 22px;
+            line-height: 60px;
+            color: #21243D;
+        }
+
+        &__wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 31px;
+        }
+
+        &__card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #E0E0E0;
+            padding-bottom: 20px;
+
+            &--right {
+
+                &-title {
+                    font-weight: 700;
+                    font-size: 30px;
+                    line-height: 44px;
+                    color: #21243D;
+                }
+
+                &-date {
+                    background: #142850;
+                    border-radius: 16px;
+                    font-weight: 900;
+                    font-size: 18px;
+                    line-height: 60px;
+                    color: #FFFFFF;
+                    padding: 0 10px 0 10px;
+                }
+
+                &-dashboard {
+                    font-size: 20px;
+                    line-height: 29px;
+                    color: #8695A4;
+                    max-lines: 26px;
+                }
+
+                &-text {
+                    max-width: 594px;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #21243D;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:870px) {
+    .featured-wrapper {
+        .featured {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            &__title {
+                font-size: 18px;
+            }
+
+            &__wrapper {
+                
+            }
+
+            &__card {
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 17px;
+
+                &--left{
+                    &-img{
+                        width: 339px;
+                    }
+                }
+
+                &--right {
+
+                    &-title {
+                        font-size: 24px;
+                        line-height: 30px;
+                        margin: 17px 0 16px 0;
+                    }
+
+                    &-date {}
+
+                    &-dashboard {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+
+                    &-text {
+                        max-width: 344px;
+                        margin-top: 24px;
+                    }
+                }
+            }
+            &__card:nth-last-child(-n+2) {
+                display: none;
+              }
+        }
+    }
+}
