@@ -5,6 +5,7 @@ import Hero from './Pages/Hero/hero';
 import Recent from './Pages/Recent/Recent';
 import Featured from './Pages/Featured/Featured';
 import Footer from './components/Footer/Footer';
+import Card from './UI/Card/card';
 
 import './index.css'
 
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Hero />
         <Recent />
         <Featured />
+        <Card />
       </main>
       <Footer />
     </>
